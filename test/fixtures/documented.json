@@ -1,0 +1,10 @@
+{
+  "source": "./test/fixtures",
+  "includes": ["^documented.js$"],
+  "destination": "./test/out",
+  "plugins": [
+    {
+      "name": "./"
+    }
+  ]
+}
