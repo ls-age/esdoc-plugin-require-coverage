@@ -1,5 +1,5 @@
 {
-  "title": "atscm",
+  "title": "esdoc-plugin-requires-coverage",
   "source": "./src",
   "destination": "./docs/api",
   "access": ["public", "package", "private"],
