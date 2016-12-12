@@ -28,6 +28,7 @@ test:
     - node_modules/.bin/nyc report --reporter=lcov | node_modules/.bin/codecov
 
     # Create API docs
+    - npm run compile
     - npm run docs
   post:
     # Save API docs
