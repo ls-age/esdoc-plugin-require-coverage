@@ -41,11 +41,10 @@ test:
 
 deployment:
   release:
-    branch: master
-    # tag: /v[0-9]+(\.[0-9]+)*/
+    tag: /v[0-9]+(\.[0-9]+)*/
     owner: ls-age
     commands:
-      # - echo -e "$NPM_USER\n$NPM_PASS\n$NPM_EMAIL" | npm login
+      - echo -e "$NPM_USER\n$NPM_PASS\n$NPM_EMAIL" | npm login
       - node_modules/.bin/publish
       - node_modules/.bin/esdoc-uploader
 

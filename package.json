@@ -1,6 +1,6 @@
 {
   "name": "esdoc-plugin-require-coverage",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "ESDoc plugin to test coverage. Useful in combination with a CI service.",
   "main": "out/require-coverage.js",
   "scripts": {
@@ -8,6 +8,7 @@
     "compile:watch": "npm run compile -- --watch",
     "docs": "esdoc -c esdoc.json",
     "lint": "eslint src",
+    "prepublish": "npm run compile && npm run docs",
     "test": "mocha --recursive --require babel-register test/*.spec.js",
     "test:coverage": "NODE_ENV=test nyc --reporter=html npm test"
   },
