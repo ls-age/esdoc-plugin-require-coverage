@@ -1,6 +1,5 @@
 {
-  "source": "./test/fixtures",
-  "includes": ["^documented.js$"],
+  "source": "./test/fixtures/not-documented",
   "destination": "./test/out",
   "plugins": [
     {
