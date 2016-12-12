@@ -15,6 +15,9 @@ dependencies:
     # Needed for hosted API docs
     - npm install esdoc-uploader
 
+    # Needed for npm publish
+    - npm install publish
+
 test:
   override:
     # Lint files
@@ -37,7 +40,12 @@ test:
     - cp -R docs/api $CIRCLE_ARTIFACTS
 
 deployment:
-  staging:
+  release:
     branch: master
+    # tag: /v[0-9]+(\.[0-9]+)*/
+    owner: ls-age
     commands:
+      # - echo -e "$NPM_USER\n$NPM_PASS\n$NPM_EMAIL" | npm login
+      - node_modules/.bin/publish
       - node_modules/.bin/esdoc-uploader
+
