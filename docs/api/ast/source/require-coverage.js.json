@@ -1,0 +1,1331 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ImportDeclaration",
+      "specifiers": [
+        {
+          "type": "ImportDefaultSpecifier",
+          "local": {
+            "type": "Identifier",
+            "name": "Plugin",
+            "range": [
+              111,
+              117
+            ],
+            "loc": {
+              "start": {
+                "line": 5,
+                "column": 7
+              },
+              "end": {
+                "line": 5,
+                "column": 13
+              }
+            }
+          },
+          "range": [
+            111,
+            117
+          ],
+          "loc": {
+            "start": {
+              "line": 5,
+              "column": 7
+            },
+            "end": {
+              "line": 5,
+              "column": 13
+            }
+          }
+        }
+      ],
+      "source": {
+        "type": "Literal",
+        "value": "./Plugin",
+        "raw": "'./Plugin'",
+        "range": [
+          123,
+          133
+        ],
+        "loc": {
+          "start": {
+            "line": 5,
+            "column": 19
+          },
+          "end": {
+            "line": 5,
+            "column": 29
+          }
+        }
+      },
+      "range": [
+        104,
+        134
+      ],
+      "loc": {
+        "start": {
+          "line": 5,
+          "column": 0
+        },
+        "end": {
+          "line": 5,
+          "column": 30
+        }
+      },
+      "leadingComments": [
+        {
+          "type": "Block",
+          "value": "*\n * @external {PluginEvent} https://esdoc.org/esdoc/class/src/Plugin/Plugin.js~PluginEvent.html\n ",
+          "range": [
+            0,
+            102
+          ],
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 0
+            },
+            "end": {
+              "line": 3,
+              "column": 3
+            }
+          }
+        }
+      ],
+      "trailingComments": [
+        {
+          "type": "Block",
+          "value": "*\n * The plugin instance used when running ESDoc\n * @type {Plugin}\n ",
+          "range": [
+            136,
+            208
+          ],
+          "loc": {
+            "start": {
+              "line": 7,
+              "column": 0
+            },
+            "end": {
+              "line": 10,
+              "column": 3
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "ExportNamedDeclaration",
+      "declaration": {
+        "type": "VariableDeclaration",
+        "declarations": [
+          {
+            "type": "VariableDeclarator",
+            "id": {
+              "type": "Identifier",
+              "name": "plugin",
+              "range": [
+                222,
+                228
+              ],
+              "loc": {
+                "start": {
+                  "line": 11,
+                  "column": 13
+                },
+                "end": {
+                  "line": 11,
+                  "column": 19
+                }
+              }
+            },
+            "init": {
+              "type": "NewExpression",
+              "callee": {
+                "type": "Identifier",
+                "name": "Plugin",
+                "range": [
+                  235,
+                  241
+                ],
+                "loc": {
+                  "start": {
+                    "line": 11,
+                    "column": 26
+                  },
+                  "end": {
+                    "line": 11,
+                    "column": 32
+                  }
+                }
+              },
+              "arguments": [],
+              "range": [
+                231,
+                243
+              ],
+              "loc": {
+                "start": {
+                  "line": 11,
+                  "column": 22
+                },
+                "end": {
+                  "line": 11,
+                  "column": 34
+                }
+              }
+            },
+            "range": [
+              222,
+              243
+            ],
+            "loc": {
+              "start": {
+                "line": 11,
+                "column": 13
+              },
+              "end": {
+                "line": 11,
+                "column": 34
+              }
+            }
+          }
+        ],
+        "kind": "const",
+        "range": [
+          216,
+          244
+        ],
+        "loc": {
+          "start": {
+            "line": 11,
+            "column": 7
+          },
+          "end": {
+            "line": 11,
+            "column": 35
+          }
+        },
+        "leadingComments": [
+          {
+            "type": "Block",
+            "value": "*\n * The plugin instance used when running ESDoc\n * @type {Plugin}\n ",
+            "range": [
+              136,
+              208
+            ],
+            "loc": {
+              "start": {
+                "line": 7,
+                "column": 0
+              },
+              "end": {
+                "line": 10,
+                "column": 3
+              }
+            }
+          }
+        ],
+        "trailingComments": [
+          {
+            "type": "Block",
+            "value": "*\n * Passes options to the plugin instance\n * @param {PluginEvent} e The event passed by ESDoc\n ",
+            "range": [
+              246,
+              346
+            ],
+            "loc": {
+              "start": {
+                "line": 13,
+                "column": 0
+              },
+              "end": {
+                "line": 16,
+                "column": 3
+              }
+            }
+          }
+        ]
+      },
+      "specifiers": [],
+      "source": null,
+      "range": [
+        209,
+        244
+      ],
+      "loc": {
+        "start": {
+          "line": 11,
+          "column": 0
+        },
+        "end": {
+          "line": 11,
+          "column": 35
+        }
+      },
+      "leadingComments": [
+        {
+          "type": "Block",
+          "value": "*\n * The plugin instance used when running ESDoc\n * @type {Plugin}\n ",
+          "range": [
+            136,
+            208
+          ],
+          "loc": {
+            "start": {
+              "line": 7,
+              "column": 0
+            },
+            "end": {
+              "line": 10,
+              "column": 3
+            }
+          }
+        }
+      ],
+      "trailingComments": [
+        {
+          "type": "Block",
+          "value": "*\n * Passes options to the plugin instance\n * @param {PluginEvent} e The event passed by ESDoc\n ",
+          "range": [
+            246,
+            346
+          ],
+          "loc": {
+            "start": {
+              "line": 13,
+              "column": 0
+            },
+            "end": {
+              "line": 16,
+              "column": 3
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "ExportNamedDeclaration",
+      "declaration": {
+        "type": "FunctionDeclaration",
+        "id": {
+          "type": "Identifier",
+          "name": "onStart",
+          "range": [
+            363,
+            370
+          ],
+          "loc": {
+            "start": {
+              "line": 17,
+              "column": 16
+            },
+            "end": {
+              "line": 17,
+              "column": 23
+            }
+          }
+        },
+        "params": [
+          {
+            "type": "Identifier",
+            "name": "e",
+            "range": [
+              371,
+              372
+            ],
+            "loc": {
+              "start": {
+                "line": 17,
+                "column": 24
+              },
+              "end": {
+                "line": 17,
+                "column": 25
+              }
+            }
+          }
+        ],
+        "body": {
+          "type": "BlockStatement",
+          "body": [
+            {
+              "type": "ExpressionStatement",
+              "expression": {
+                "type": "CallExpression",
+                "callee": {
+                  "type": "MemberExpression",
+                  "computed": false,
+                  "object": {
+                    "type": "Identifier",
+                    "name": "plugin",
+                    "range": [
+                      378,
+                      384
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 18,
+                        "column": 2
+                      },
+                      "end": {
+                        "line": 18,
+                        "column": 8
+                      }
+                    }
+                  },
+                  "property": {
+                    "type": "Identifier",
+                    "name": "handleOptions",
+                    "range": [
+                      385,
+                      398
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 18,
+                        "column": 9
+                      },
+                      "end": {
+                        "line": 18,
+                        "column": 22
+                      }
+                    }
+                  },
+                  "range": [
+                    378,
+                    398
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 18,
+                      "column": 2
+                    },
+                    "end": {
+                      "line": 18,
+                      "column": 22
+                    }
+                  }
+                },
+                "arguments": [
+                  {
+                    "type": "MemberExpression",
+                    "computed": false,
+                    "object": {
+                      "type": "MemberExpression",
+                      "computed": false,
+                      "object": {
+                        "type": "Identifier",
+                        "name": "e",
+                        "range": [
+                          399,
+                          400
+                        ],
+                        "loc": {
+                          "start": {
+                            "line": 18,
+                            "column": 23
+                          },
+                          "end": {
+                            "line": 18,
+                            "column": 24
+                          }
+                        }
+                      },
+                      "property": {
+                        "type": "Identifier",
+                        "name": "data",
+                        "range": [
+                          401,
+                          405
+                        ],
+                        "loc": {
+                          "start": {
+                            "line": 18,
+                            "column": 25
+                          },
+                          "end": {
+                            "line": 18,
+                            "column": 29
+                          }
+                        }
+                      },
+                      "range": [
+                        399,
+                        405
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 18,
+                          "column": 23
+                        },
+                        "end": {
+                          "line": 18,
+                          "column": 29
+                        }
+                      }
+                    },
+                    "property": {
+                      "type": "Identifier",
+                      "name": "option",
+                      "range": [
+                        406,
+                        412
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 18,
+                          "column": 30
+                        },
+                        "end": {
+                          "line": 18,
+                          "column": 36
+                        }
+                      }
+                    },
+                    "range": [
+                      399,
+                      412
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 18,
+                        "column": 23
+                      },
+                      "end": {
+                        "line": 18,
+                        "column": 36
+                      }
+                    }
+                  }
+                ],
+                "range": [
+                  378,
+                  413
+                ],
+                "loc": {
+                  "start": {
+                    "line": 18,
+                    "column": 2
+                  },
+                  "end": {
+                    "line": 18,
+                    "column": 37
+                  }
+                }
+              },
+              "range": [
+                378,
+                414
+              ],
+              "loc": {
+                "start": {
+                  "line": 18,
+                  "column": 2
+                },
+                "end": {
+                  "line": 18,
+                  "column": 38
+                }
+              }
+            }
+          ],
+          "range": [
+            374,
+            416
+          ],
+          "loc": {
+            "start": {
+              "line": 17,
+              "column": 27
+            },
+            "end": {
+              "line": 19,
+              "column": 1
+            }
+          }
+        },
+        "generator": false,
+        "expression": false,
+        "range": [
+          354,
+          416
+        ],
+        "loc": {
+          "start": {
+            "line": 17,
+            "column": 7
+          },
+          "end": {
+            "line": 19,
+            "column": 1
+          }
+        },
+        "leadingComments": [
+          {
+            "type": "Block",
+            "value": "*\n * Passes options to the plugin instance\n * @param {PluginEvent} e The event passed by ESDoc\n ",
+            "range": [
+              246,
+              346
+            ],
+            "loc": {
+              "start": {
+                "line": 13,
+                "column": 0
+              },
+              "end": {
+                "line": 16,
+                "column": 3
+              }
+            }
+          }
+        ],
+        "trailingComments": [
+          {
+            "type": "Block",
+            "value": "*\n * Passes config to the plugin instance\n * @param {pluginEvent} e The event passed by ESDoc\n ",
+            "range": [
+              418,
+              517
+            ],
+            "loc": {
+              "start": {
+                "line": 21,
+                "column": 0
+              },
+              "end": {
+                "line": 24,
+                "column": 3
+              }
+            }
+          }
+        ]
+      },
+      "specifiers": [],
+      "source": null,
+      "range": [
+        347,
+        416
+      ],
+      "loc": {
+        "start": {
+          "line": 17,
+          "column": 0
+        },
+        "end": {
+          "line": 19,
+          "column": 1
+        }
+      },
+      "leadingComments": [
+        {
+          "type": "Block",
+          "value": "*\n * Passes options to the plugin instance\n * @param {PluginEvent} e The event passed by ESDoc\n ",
+          "range": [
+            246,
+            346
+          ],
+          "loc": {
+            "start": {
+              "line": 13,
+              "column": 0
+            },
+            "end": {
+              "line": 16,
+              "column": 3
+            }
+          }
+        }
+      ],
+      "trailingComments": [
+        {
+          "type": "Block",
+          "value": "*\n * Passes config to the plugin instance\n * @param {pluginEvent} e The event passed by ESDoc\n ",
+          "range": [
+            418,
+            517
+          ],
+          "loc": {
+            "start": {
+              "line": 21,
+              "column": 0
+            },
+            "end": {
+              "line": 24,
+              "column": 3
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "ExportNamedDeclaration",
+      "declaration": {
+        "type": "FunctionDeclaration",
+        "id": {
+          "type": "Identifier",
+          "name": "onHandleConfig",
+          "range": [
+            534,
+            548
+          ],
+          "loc": {
+            "start": {
+              "line": 25,
+              "column": 16
+            },
+            "end": {
+              "line": 25,
+              "column": 30
+            }
+          }
+        },
+        "params": [
+          {
+            "type": "Identifier",
+            "name": "e",
+            "range": [
+              549,
+              550
+            ],
+            "loc": {
+              "start": {
+                "line": 25,
+                "column": 31
+              },
+              "end": {
+                "line": 25,
+                "column": 32
+              }
+            }
+          }
+        ],
+        "body": {
+          "type": "BlockStatement",
+          "body": [
+            {
+              "type": "ExpressionStatement",
+              "expression": {
+                "type": "CallExpression",
+                "callee": {
+                  "type": "MemberExpression",
+                  "computed": false,
+                  "object": {
+                    "type": "Identifier",
+                    "name": "plugin",
+                    "range": [
+                      556,
+                      562
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 26,
+                        "column": 2
+                      },
+                      "end": {
+                        "line": 26,
+                        "column": 8
+                      }
+                    }
+                  },
+                  "property": {
+                    "type": "Identifier",
+                    "name": "handleConfig",
+                    "range": [
+                      563,
+                      575
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 26,
+                        "column": 9
+                      },
+                      "end": {
+                        "line": 26,
+                        "column": 21
+                      }
+                    }
+                  },
+                  "range": [
+                    556,
+                    575
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 26,
+                      "column": 2
+                    },
+                    "end": {
+                      "line": 26,
+                      "column": 21
+                    }
+                  }
+                },
+                "arguments": [
+                  {
+                    "type": "MemberExpression",
+                    "computed": false,
+                    "object": {
+                      "type": "MemberExpression",
+                      "computed": false,
+                      "object": {
+                        "type": "Identifier",
+                        "name": "e",
+                        "range": [
+                          576,
+                          577
+                        ],
+                        "loc": {
+                          "start": {
+                            "line": 26,
+                            "column": 22
+                          },
+                          "end": {
+                            "line": 26,
+                            "column": 23
+                          }
+                        }
+                      },
+                      "property": {
+                        "type": "Identifier",
+                        "name": "data",
+                        "range": [
+                          578,
+                          582
+                        ],
+                        "loc": {
+                          "start": {
+                            "line": 26,
+                            "column": 24
+                          },
+                          "end": {
+                            "line": 26,
+                            "column": 28
+                          }
+                        }
+                      },
+                      "range": [
+                        576,
+                        582
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 26,
+                          "column": 22
+                        },
+                        "end": {
+                          "line": 26,
+                          "column": 28
+                        }
+                      }
+                    },
+                    "property": {
+                      "type": "Identifier",
+                      "name": "config",
+                      "range": [
+                        583,
+                        589
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 26,
+                          "column": 29
+                        },
+                        "end": {
+                          "line": 26,
+                          "column": 35
+                        }
+                      }
+                    },
+                    "range": [
+                      576,
+                      589
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 26,
+                        "column": 22
+                      },
+                      "end": {
+                        "line": 26,
+                        "column": 35
+                      }
+                    }
+                  }
+                ],
+                "range": [
+                  556,
+                  590
+                ],
+                "loc": {
+                  "start": {
+                    "line": 26,
+                    "column": 2
+                  },
+                  "end": {
+                    "line": 26,
+                    "column": 36
+                  }
+                }
+              },
+              "range": [
+                556,
+                591
+              ],
+              "loc": {
+                "start": {
+                  "line": 26,
+                  "column": 2
+                },
+                "end": {
+                  "line": 26,
+                  "column": 37
+                }
+              }
+            }
+          ],
+          "range": [
+            552,
+            593
+          ],
+          "loc": {
+            "start": {
+              "line": 25,
+              "column": 34
+            },
+            "end": {
+              "line": 27,
+              "column": 1
+            }
+          }
+        },
+        "generator": false,
+        "expression": false,
+        "range": [
+          525,
+          593
+        ],
+        "loc": {
+          "start": {
+            "line": 25,
+            "column": 7
+          },
+          "end": {
+            "line": 27,
+            "column": 1
+          }
+        },
+        "leadingComments": [
+          {
+            "type": "Block",
+            "value": "*\n * Passes config to the plugin instance\n * @param {pluginEvent} e The event passed by ESDoc\n ",
+            "range": [
+              418,
+              517
+            ],
+            "loc": {
+              "start": {
+                "line": 21,
+                "column": 0
+              },
+              "end": {
+                "line": 24,
+                "column": 3
+              }
+            }
+          }
+        ],
+        "trailingComments": [
+          {
+            "type": "Block",
+            "value": "*\n * Invokes {Plugin#checkCoverage}\n ",
+            "range": [
+              595,
+              636
+            ],
+            "loc": {
+              "start": {
+                "line": 29,
+                "column": 0
+              },
+              "end": {
+                "line": 31,
+                "column": 3
+              }
+            }
+          }
+        ]
+      },
+      "specifiers": [],
+      "source": null,
+      "range": [
+        518,
+        593
+      ],
+      "loc": {
+        "start": {
+          "line": 25,
+          "column": 0
+        },
+        "end": {
+          "line": 27,
+          "column": 1
+        }
+      },
+      "leadingComments": [
+        {
+          "type": "Block",
+          "value": "*\n * Passes config to the plugin instance\n * @param {pluginEvent} e The event passed by ESDoc\n ",
+          "range": [
+            418,
+            517
+          ],
+          "loc": {
+            "start": {
+              "line": 21,
+              "column": 0
+            },
+            "end": {
+              "line": 24,
+              "column": 3
+            }
+          }
+        }
+      ],
+      "trailingComments": [
+        {
+          "type": "Block",
+          "value": "*\n * Invokes {Plugin#checkCoverage}\n ",
+          "range": [
+            595,
+            636
+          ],
+          "loc": {
+            "start": {
+              "line": 29,
+              "column": 0
+            },
+            "end": {
+              "line": 31,
+              "column": 3
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "ExportNamedDeclaration",
+      "declaration": {
+        "type": "FunctionDeclaration",
+        "id": {
+          "type": "Identifier",
+          "name": "onComplete",
+          "range": [
+            653,
+            663
+          ],
+          "loc": {
+            "start": {
+              "line": 32,
+              "column": 16
+            },
+            "end": {
+              "line": 32,
+              "column": 26
+            }
+          }
+        },
+        "params": [],
+        "body": {
+          "type": "BlockStatement",
+          "body": [
+            {
+              "type": "ExpressionStatement",
+              "expression": {
+                "type": "CallExpression",
+                "callee": {
+                  "type": "MemberExpression",
+                  "computed": false,
+                  "object": {
+                    "type": "Identifier",
+                    "name": "plugin",
+                    "range": [
+                      670,
+                      676
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 33,
+                        "column": 2
+                      },
+                      "end": {
+                        "line": 33,
+                        "column": 8
+                      }
+                    }
+                  },
+                  "property": {
+                    "type": "Identifier",
+                    "name": "checkCoverage",
+                    "range": [
+                      677,
+                      690
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 33,
+                        "column": 9
+                      },
+                      "end": {
+                        "line": 33,
+                        "column": 22
+                      }
+                    }
+                  },
+                  "range": [
+                    670,
+                    690
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 33,
+                      "column": 2
+                    },
+                    "end": {
+                      "line": 33,
+                      "column": 22
+                    }
+                  }
+                },
+                "arguments": [],
+                "range": [
+                  670,
+                  692
+                ],
+                "loc": {
+                  "start": {
+                    "line": 33,
+                    "column": 2
+                  },
+                  "end": {
+                    "line": 33,
+                    "column": 24
+                  }
+                }
+              },
+              "range": [
+                670,
+                693
+              ],
+              "loc": {
+                "start": {
+                  "line": 33,
+                  "column": 2
+                },
+                "end": {
+                  "line": 33,
+                  "column": 25
+                }
+              }
+            }
+          ],
+          "range": [
+            666,
+            695
+          ],
+          "loc": {
+            "start": {
+              "line": 32,
+              "column": 29
+            },
+            "end": {
+              "line": 34,
+              "column": 1
+            }
+          }
+        },
+        "generator": false,
+        "expression": false,
+        "range": [
+          644,
+          695
+        ],
+        "loc": {
+          "start": {
+            "line": 32,
+            "column": 7
+          },
+          "end": {
+            "line": 34,
+            "column": 1
+          }
+        },
+        "leadingComments": [
+          {
+            "type": "Block",
+            "value": "*\n * Invokes {Plugin#checkCoverage}\n ",
+            "range": [
+              595,
+              636
+            ],
+            "loc": {
+              "start": {
+                "line": 29,
+                "column": 0
+              },
+              "end": {
+                "line": 31,
+                "column": 3
+              }
+            }
+          }
+        ],
+        "trailingComments": []
+      },
+      "specifiers": [],
+      "source": null,
+      "range": [
+        637,
+        695
+      ],
+      "loc": {
+        "start": {
+          "line": 32,
+          "column": 0
+        },
+        "end": {
+          "line": 34,
+          "column": 1
+        }
+      },
+      "leadingComments": [
+        {
+          "type": "Block",
+          "value": "*\n * Invokes {Plugin#checkCoverage}\n ",
+          "range": [
+            595,
+            636
+          ],
+          "loc": {
+            "start": {
+              "line": 29,
+              "column": 0
+            },
+            "end": {
+              "line": 31,
+              "column": 3
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "sourceType": "module",
+  "range": [
+    104,
+    695
+  ],
+  "loc": {
+    "start": {
+      "line": 5,
+      "column": 0
+    },
+    "end": {
+      "line": 34,
+      "column": 1
+    }
+  },
+  "comments": [
+    {
+      "type": "Block",
+      "value": "*\n * @external {PluginEvent} https://esdoc.org/esdoc/class/src/Plugin/Plugin.js~PluginEvent.html\n ",
+      "range": [
+        0,
+        102
+      ],
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 0
+        },
+        "end": {
+          "line": 3,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "Block",
+      "value": "*\n * The plugin instance used when running ESDoc\n * @type {Plugin}\n ",
+      "range": [
+        136,
+        208
+      ],
+      "loc": {
+        "start": {
+          "line": 7,
+          "column": 0
+        },
+        "end": {
+          "line": 10,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "Block",
+      "value": "*\n * Passes options to the plugin instance\n * @param {PluginEvent} e The event passed by ESDoc\n ",
+      "range": [
+        246,
+        346
+      ],
+      "loc": {
+        "start": {
+          "line": 13,
+          "column": 0
+        },
+        "end": {
+          "line": 16,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "Block",
+      "value": "*\n * Passes config to the plugin instance\n * @param {pluginEvent} e The event passed by ESDoc\n ",
+      "range": [
+        418,
+        517
+      ],
+      "loc": {
+        "start": {
+          "line": 21,
+          "column": 0
+        },
+        "end": {
+          "line": 24,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "Block",
+      "value": "*\n * Invokes {Plugin#checkCoverage}\n ",
+      "range": [
+        595,
+        636
+      ],
+      "loc": {
+        "start": {
+          "line": 29,
+          "column": 0
+        },
+        "end": {
+          "line": 31,
+          "column": 3
+        }
+      }
+    }
+  ]
+}
