@@ -1,46 +1,65 @@
 import { spawn } from 'child_process';
 import expect from 'unexpected';
+import { stub } from 'sinon';
 import { PluginEvent } from 'esdoc/out/src/Plugin/Plugin';
-import * as plugin from '../src/require-coverage';
+import * as requireCoverage from '../src/require-coverage';
 
 describe('require-coverage', function() {
   /** @test {onStart} */
   it('should export onStart', function() {
-    expect(plugin.onStart, 'to be defined');
+    expect(requireCoverage.onStart, 'to be defined');
+  });
+
+  /** @test {onHandleConfig} */
+  it('should export onHandleConfig', function() {
+    expect(requireCoverage.onHandleConfig, 'to be defined');
   });
 
   /** @test {onComplete} */
   it('should export onComplete', function() {
-    expect(plugin.onComplete, 'to be defined');
+    expect(requireCoverage.onComplete, 'to be defined');
   });
 
   /** @test {onStart} */
   describe('#onStart', function() {
-    describe('options', function() {
-      it('required should default to 90', function() {
-        plugin.onStart(new PluginEvent());
+    it('should call Plugin#handleOptions', function() {
+      const handleOptions = stub(requireCoverage.plugin, 'handleOptions');
+      const option = { test: true };
 
-        expect(plugin.plugin._required, 'to equal', 90);
-      });
+      requireCoverage.onStart(new PluginEvent({ option }));
+      expect(handleOptions.calledOnce, 'to be true');
+      expect(handleOptions.calledWith(option), 'to be true');
+    });
+  });
 
-      it('required should be configurable', function() {
-        const thd = 80;
-        plugin.onStart(new PluginEvent({ option: { required: thd } }));
+  /** @test {onStart} */
+  describe('#onStart', function() {
+    it('should call Plugin#handleOptions', function() {
+      const handleConfig = stub(requireCoverage.plugin, 'handleConfig');
+      const config = { destination: 'dest' };
 
-        expect(plugin.plugin._required, 'to equal', thd);
-      });
+      requireCoverage.onHandleConfig(new PluginEvent({ config }));
+      expect(handleConfig.calledOnce, 'to be true');
+      expect(handleConfig.calledWith(config), 'to be true');
     });
   });
 
   /** @test {onComplete} */
   describe('#onComplete', function() {
+    it('should call Plugin#checkCoverage', function() {
+      const checkCoverage = stub(requireCoverage.plugin, 'checkCoverage');
+
+      requireCoverage.onComplete(new PluginEvent({}));
+      expect(checkCoverage.calledOnce, 'to be true');
+    });
+
     this.timeout(10000);
 
     context('with undocumented project', function() {
       it('should should exit with code 1', function(done) {
         const child = spawn('./node_modules/.bin/esdoc', [
           '-c',
-          './test/fixtures/not-documented.json',
+          './test/fixtures/not-documented/not-documented.json',
         ]);
 
         child.on('close', function(code) {
@@ -54,7 +73,7 @@ describe('require-coverage', function() {
       it('should should exit with code 0', function(done) {
         const child = spawn('./node_modules/.bin/esdoc', [
           '-c',
-          './test/fixtures/documented.json',
+          './test/fixtures/documented/documented.json',
         ]);
 
         child.on('close', function(code) {
