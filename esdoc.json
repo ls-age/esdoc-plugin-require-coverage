@@ -12,10 +12,7 @@
   },
   "plugins": [
     {
-      "name": "./",
-      "option": {
-        "threshold": 90
-      }
+      "name": "./"
     }
   ]
 }
