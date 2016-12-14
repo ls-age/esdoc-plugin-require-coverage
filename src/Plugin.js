@@ -60,7 +60,7 @@ export default class Plugin {
       throw new Error('coverage.json file not found. Double-check ESDoc finished.');
     }
 
-    const covered = parseFloat(/([0-9\.]+)%/.exec(coverageReport.coverage)[1], 10);
+    const covered = parseFloat(/([0-9.]+)%/.exec(coverageReport.coverage)[1], 10);
 
     if (covered < this._required) {
       throw new Error(`Coverage is at ${covered}%, (${this._required}% required)${EOL}`);
