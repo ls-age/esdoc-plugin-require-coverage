@@ -1,6 +1,6 @@
 {
   "name": "esdoc-plugin-require-coverage",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "ESDoc plugin to test coverage. Useful in combination with a CI service.",
   "main": "out/require-coverage.js",
   "scripts": {
