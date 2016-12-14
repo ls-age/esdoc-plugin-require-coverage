@@ -1,6 +1,7 @@
 # Changelog
 
-## Next
+## [0.1.2](https://github.com/ls-age/esdoc-plugin-require-coverage/releases/tag/v0.1.2)
+*Date: 2016-12-14*
 
 **Fixed**
 
