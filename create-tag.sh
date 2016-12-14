@@ -1,5 +1,12 @@
 #!/usr/bin/env bash
 
+read -p "Does package.json contain version $1? [yes/no] " -n 1 -r
+if [[ $REPLY =~ ^[Nn]$ ]]
+then
+    echo "Update package.json version number first"
+    exit 1;
+fi
+
 if [ $# -eq 0 ]
   then
     echo "No version supplied"
